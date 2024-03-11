@@ -1,0 +1,113 @@
+$mainFont: 'Gelasio',
+serif;
+$fontStyle: normal;
+
+  .wrap-review {
+    display: flex;
+    justify-content: center;
+    padding: 20px 60px;
+    flex-direction: column;
+  }
+
+  .align-form-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .add-textarea {
+    max-width: 800px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #1B75BB;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.15);
+  }
+
+  .field-style {
+    width: 60vw;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #1B75BB;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.15);
+  }
+
+  .form-ratings {
+    padding: 10px 0px;
+  }
+
+  .photo {
+    object-fit: cover;
+    border-radius: 25px;
+    margin: 10px;
+  }
+
+  .remove-btn {
+    padding: 0 10px;
+  }
+
+  .rating-label {
+    padding-top: 10px;
+  }
+
+  .form-review {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 1280) {
+    .wrap-review {
+      padding: 20px 90px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .wrap-review {
+      padding: 20px 60px;
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .wrap-review {
+      padding: 20px 40px;
+      align-self: center;
+    }
+
+    .add-textarea {
+      width: 60vw;
+    }
+
+    .remove-review {
+      width: unset;
+    }
+
+    .review-box-admin-width {
+      width: 180px;
+      height: 180px;
+    }
+
+    .remove-wrap {
+      flex-wrap: wrap;
+      max-width: unset;
+    }
+
+    .admin-face {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    .field-style {
+      width: 100%;
+    }
+
+    .add-textarea {
+      width: 100%;
+    }
+  }

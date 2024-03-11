@@ -1,0 +1,31 @@
+$mainFont: 'Gelasio',
+serif;
+$fontStyle: normal;
+
+.home-choose-us {
+  font-size: 2em;
+  padding: 30px 0;
+  line-height: 1;
+  text-align: center;
+  font-family: $mainFont;
+  font-weight: 700;
+}
+
+.home-choose-us-explanation {
+  width: 100%;
+  padding: 20px 0 30px 0;
+  font-style: $fontStyle;
+  font-weight: normal;
+  font-size: 1.4em;
+  line-height: 1;
+  text-align: center;
+  color: #081F32;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+  .home-choose-us-explanation {
+    width: 90%;
+    margin-left: 5%;
+  }
+}

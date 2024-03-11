@@ -1,0 +1,93 @@
+$mainFont: 'Gelasio',
+serif;
+$fontStyle: normal;
+
+  .remove-review {
+    display: flex;
+    width: 60vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .excursion-name-admin {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    padding: 10px;
+    max-width: 160px;
+  }
+
+  .remove-excursion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 60px;
+  }
+
+  .excursion-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .head-start {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px;
+    justify-content: center;
+    width: 160px;
+  }
+
+  .head-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .excursion-box-admin {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid darkgrey;
+    box-sizing: border-box;
+    border-radius: 0.31em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    padding: 15px;
+    margin: 0 5px 5px 15px;
+    font-family: $mainFont;
+    text-align: center;
+  }
+
+  .review-controls {
+    position: absolute;
+    cursor: pointer;
+    left: 2px;
+    top: 2px;
+  }
+
+  .admin-title {
+    justify-content: center;
+  }
+
+  .excursion-title {
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  @media screen and (max-width: 780) {
+    .remove-review {
+      padding: 20px 40px;
+    }
+  }
+
+  @media screen and (max-width: 480) {
+    .remove-review {
+      padding: 20px 20px;
+    }
+  }

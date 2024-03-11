@@ -1,0 +1,11 @@
+.wrapper-letter-sent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    .letter-sent{
+      font-size: 1.5rem;
+    }
+  }
+  

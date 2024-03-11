@@ -1,0 +1,161 @@
+  .excursion-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 39vw;
+    height: 20vw;
+    margin-bottom: 30px;
+  
+    .excursion-main_img {
+      min-width: 50%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  
+    .excursion-body {
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+  
+      .excursion-title {
+        line-height: 1;
+        font-size: 2vw;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+      }
+  
+      .excursion-text {
+        line-height: 1.2;
+        font-size: 1.5vw;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+      }
+  
+      .excursion-btn {
+        background: #1B75BB;
+        color: #FFFFFF;
+        border-radius: 7px;
+        border: none;
+        font-size: 1.2em;
+        height: 32px;
+        outline: none !important;
+        width: 100%;
+      }
+  
+      .excursion-btn:hover {
+        background: rgba(27, 117, 187, 0.5);
+      }
+    }
+  }
+  
+  
+  @media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .excursion-card {
+      flex-direction: column;
+      height: 420px;
+  
+      .excursion-text {
+        -webkit-line-clamp: 5 !important;
+      }
+  
+      .excursion-title {
+        text-align: center !important;
+      }
+    }
+  
+    .excursion-main_img {
+      width: unset !important;
+      height: 60% !important;
+    }
+  
+    .excursion-btn {
+      outline: none !important;
+      min-width: 300px !important;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 38vw !important;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {  
+    .excursion-title {
+      font-size: 1.2em !important;
+    }
+  }
+  
+  @media screen and (max-width:1000px) {
+  
+    .excursion-cost.main {
+      display: none;
+    }
+  
+    .excursion-card {
+      flex-direction: row;
+      width: 80vw;
+      height: 100%;
+
+      .excursion-body {
+        height: unset;
+      }
+
+      .excursion-title {
+        padding-left: 10px;
+      }
+  
+      .excursion-main_img {
+        height: unset;
+        width: 40%;
+        border-radius: 4px;
+      }
+  
+      .excursion-text {
+        text-align: center;
+        font-size: 12px;
+        width: 42vw;
+        padding-left: 10px;
+        margin-bottom: 0px;
+        -webkit-line-clamp: 12 !important;
+        font-size: inherit !important;
+      }
+  
+      .excursion-btn_link {
+        width: 100%;
+  
+        .excursion-btn {
+          height: 1.5em;
+          border-radius: 4px;
+          margin-top: 5px;
+          margin-left: 10px;
+          margin-bottom: 0px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:640px) {
+    .excursion-card {
+      
+      .excursion-text {
+        -webkit-line-clamp: 8 !important;
+      }
+    }
+  }
+
+  @media screen and (max-width:480px) {
+    .excursion-card {
+      
+      .excursion-text {
+        -webkit-line-clamp: 6 !important;
+      }
+    }
+  }

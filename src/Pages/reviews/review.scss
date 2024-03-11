@@ -1,0 +1,238 @@
+$whiteText: #FFFFFF;
+$mainFont: 'Gelasio',
+serif;
+$fontStyle: normal;
+$bold: bold;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+header.header-reviews {
+  min-height: 65vh;
+  align-items: center;
+  justify-content: center;
+}
+
+div.box-width {
+  max-width: 50vw;
+}
+
+.home-review-face {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.reviews-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.pages-bar {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-rev {
+  width: 2em;
+  outline: 0 !important;
+  height: 2em;
+}
+
+.arrow-right-rev {
+  transform: rotate(45deg);
+  border-top: 0.5em solid black;
+  border-right: 0.5em solid black;
+}
+
+.current {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  font-family: $mainFont;
+  font-style: $fontStyle;
+  font-size: 2em;
+  display: inline-flex;
+}
+
+.usual {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  font-family: $mainFont;
+  font-style: $fontStyle;
+  font-size: 2em;
+  display: inline-flex;
+  color: grey;
+  opacity: 0.8;
+}
+
+.wrapper-auth{
+  background-color: #e9e6e68f;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 3rem auto;
+  .text-auth{
+    margin: 3rem 0;
+    font-size: 1.5rem;
+    a{
+      font-size: 1.5rem;
+    }
+    a:hover{
+      color: #1B75BB;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .arrow-rev {
+    border: none;
+    background-color: transparent;
+  }
+
+  .arrow-right-rev {
+    transform: rotate(45deg);
+    border-top: 0.5em solid black;
+    border-right: 0.5em solid black;
+    outline: none;
+    background-color: transparent;
+  }
+
+  .arrow-left-grey-rev {
+    border-top: 0.5em solid rgba(118, 118, 118, 0.47);
+    border-right: 0.5em solid rgba(118, 118, 118, 0.47);
+    transform: rotate(-135deg);
+    outline: none;
+    background-color: transparent;
+  }
+
+  .arrow-left-rev {
+    border-top: 0.5em solid black;
+    border-right: 0.5em solid black;
+    transform: rotate(-135deg);
+    outline: none;
+    background-color: transparent;
+  }
+
+  .arrow-right-grey-rev {
+    transform: rotate(45deg);
+    outline: none;
+    border-top: 0.5em solid rgba(118, 118, 118, 0.47);
+    border-right: 0.5em solid rgba(118, 118, 118, 0.47);
+    background-color: transparent;
+  }
+  .wrapper-auth{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  div.review-box-width {
+    width: 45%
+  }
+
+  .reviews-reviews {
+    padding: 3.5em 5vw;
+  }
+
+  .arrow-rev {
+    background: transparent;
+    border: none;
+  }
+
+  .arrow-right-rev {
+    transform: rotate(45deg);
+    border-top: 0.5em solid black;
+    border-right: 0.5em solid black;
+  }
+
+  .arrow-left-grey-rev {
+    border-top: 0.5em solid rgba(118, 118, 118, 0.47);
+    border-right: 0.5em solid rgba(118, 118, 118, 0.47);
+    transform: rotate(-135deg);
+  }
+
+  .arrow-left-rev {
+    border-top: 0.5em solid black;
+    border-right: 0.5em solid black;
+    transform: rotate(-135deg);
+  }
+
+  .arrow-right-grey-rev {
+    transform: rotate(45deg);
+    border-top: 0.5em solid rgba(118, 118, 118, 0.47);
+    border-right: 0.5em solid rgba(118, 118, 118, 0.47);
+  }
+  .wrapper-auth{
+    width: 87%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  div.review-box-width {
+    width: 100%
+  }
+
+  div.box-width {
+    max-width: 90vw;
+  }
+
+  div.review-box {
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
+
+  .reviews-reviews {
+    width: 90vw;
+    padding: 0;
+    margin: 3.5em 5vw 0 5vw;
+  }
+
+  .reviews-leave-review-btn {
+    width: 90vw;
+  }
+
+  .arrow-rev {
+    background: transparent;
+    border: none;
+  }
+
+  .arrow-right-rev {
+    transform: rotate(45deg);
+    border-top: 0.5em solid black;
+    border-right: 0.5em solid black;
+  }
+
+  .arrow-left-grey-rev {
+    border-top: 0.5em solid rgba(118, 118, 118, 0.47);
+    border-right: 0.5em solid rgba(118, 118, 118, 0.47);
+    transform: rotate(-135deg);
+  }
+
+  .arrow-left-rev {
+    border-top: 0.5em solid black;
+    border-right: 0.5em solid black;
+    transform: rotate(-135deg);
+  }
+
+  .arrow-right-grey-rev {
+    transform: rotate(45deg);
+    border-top: 0.5em solid rgba(118, 118, 118, 0.47);
+    border-right: 0.5em solid rgba(118, 118, 118, 0.47);
+  }
+  .wrapper-auth{
+    width: 91%;
+  }
+}

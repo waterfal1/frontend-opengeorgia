@@ -1,0 +1,71 @@
+$width: 80vw;
+$height: $width*0.6;
+
+$width_780px: 90vw;
+$height_780px: $width_780px*0.6;
+
+$width_1000px: 80vw;
+$height_1000px: $width_1000px*0.6;
+
+.mySwiper_TourInfoPage.swiper-container {
+  width: $width;
+  height: $height;
+}
+
+.mySwiper_TourInfoPage .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.mySwiper_TourInfoPage .swiper-slide img {
+  display: block;
+  width: $width;
+  height: $height;
+  object-fit: fill;
+  border-radius: 10px;
+}
+
+.mySwiper_TourInfoPage .swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mySwiper_TourInfoPage .swiper-button-prev,
+.swiper-button-next {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .mySwiper_TourInfoPage.swiper-container {
+    width: $width_1000px;
+    height: $height_1000px;
+  }
+
+  .mySwiper_TourInfoPage .swiper-slide img {
+    width: $width_1000px;
+    height: $height_1000px;
+  }
+}
+
+@media (max-width: 780px) {
+  .mySwiper_TourInfoPage.swiper-container {
+    width: $width_780px;
+    height: $height_780px;
+  }
+
+  .mySwiper_TourInfoPage .swiper-slide img {
+    width: $width_780px;
+    height: $height_780px;
+  }
+}

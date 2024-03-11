@@ -1,0 +1,68 @@
+$mainFont: 'Gelasio',
+serif;
+$fontStyle: normal;
+
+
+  .admin-container {
+    display: flex;
+    background-color:#b0d0e8;
+    margin: 20px 0;
+  }
+
+  .logged {
+    background-color: white;
+    width: 100%;
+    padding: 2px;
+    margin: 20px 10px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .menu-item-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .back-color {
+    background-color: #fffa9e;
+  }
+
+  .menu-item-container :hover {
+    background-color: #1B75BB;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-item {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 780px) {
+    .admin-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-list-container {
+      display: flex;
+      justify-content: center;
+      white-space: 'normal';
+      word-wrap: break-word;
+    }
+  }

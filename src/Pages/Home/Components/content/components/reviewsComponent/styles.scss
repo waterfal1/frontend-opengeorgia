@@ -1,0 +1,54 @@
+$mainFont: 'Gelasio',
+serif;
+
+.review-box {
+    display: flex;
+    border: 1px solid darkgrey;
+    box-sizing: border-box;
+    border-radius: 0.31em;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 30%;
+    margin: 15px 5px 5px 15px;
+    font-family: $mainFont;
+    text-align: center;
+  }
+
+  .review-text {
+    margin: 0 !important;
+    font-size: 22px;
+    line-height: 1.2;
+    padding: 10px 0;
+    position: relative;
+  }
+
+  .review-text:before {
+    content: open-quote;
+    position: absolute;
+    top: -20px;
+    color: grey;
+    left: 0;
+    font-size: 3em;
+  }
+  
+  .review-text:after {
+    content: close-quote;
+    position: absolute;
+    bottom: -70px;
+    color: grey;
+    font-size: 3em;
+    right: 0;
+  }
+
+  @media screen and (max-width: 1280px) {
+    .review-box {
+        width: 32%;
+      }
+    }
+
+@media screen and (max-width: 768px) {
+    .review-box {
+        width: 40%
+      }
+}

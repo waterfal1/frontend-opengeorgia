@@ -1,0 +1,180 @@
+  .tour_unit {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 1vw;
+    justify-content: center;
+  }
+
+  .excursion-cost {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    height: 3vw;
+    margin-top: 17vw;
+    width: 19.5vw;
+    background: rgba(1, 1, 1, 0.4);
+    border-radius: 12px;
+  }
+  
+  .tour_direction_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 0 150px;
+  }
+  
+  .main_tour_direction_info {
+    position: relative;
+    width: 80vw !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+  
+    .main_tour_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 39vw;
+    }
+  
+    .main_tour_img {
+      width: 50%;
+      height: 33vw;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  
+    .main_tour_cost {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      background: rgba(1, 1, 1, 0.4);
+      border-radius: 12px;
+      font-size: 1.5em;
+      height: 2em;
+      bottom: 40%;
+      color: white;
+      width: 50%;
+    }
+  
+    .main_tour_title {
+      min-font-size: 1.5em;
+      font-size: 2vw;
+      text-align: left;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .main_tour_text {
+      line-height: 1.5;
+      min-font-size: 1.5em;
+      text-align: left;
+      font-size: 1.5vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 13;
+      -webkit-box-orient: vertical;
+    }
+  }
+  
+  .tour_direction_excursion_block {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80vw;
+  }
+  
+  .main {
+    width: 50%;
+    margin-top: 30vw;
+  }
+  
+  
+  @media screen and (min-width: 1000px) and (max-width: 1200px) { 
+    .excursion-cost {
+      width: 39vw;
+      margin-top: 220px;
+      font-size: 1.5em;
+      height: 1.33em;
+    }
+  
+    .main {
+      width: 100%;
+      margin-top: 30vw;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .main_tour_text {
+      margin-bottom: 2em;
+      -webkit-line-clamp: 30 !important;
+      width: 80vw;
+    }
+  
+    .main_tour_img {
+      height: 50vw;
+      width: 100% !important;
+    }
+  
+    .excursion-cost {
+      width: 39vw;
+      margin-top: 220px;
+      font-size: 1.5em;
+      height: 1.33em;
+    }
+  
+    .main {
+      width: 100%;
+      margin-top: 30vw;
+    }
+  
+    .main_tour_direction_info {
+      width: 80vw !important;
+      margin-bottom: 0.5vw;
+      flex-direction: column;
+    }
+  
+    .main_tour_info {
+      width: 80vw !important;
+    }
+  }
+  
+  @media screen and (max-width:1000px) {
+    .main_tour_direction_info {
+      margin-top: 0;
+    }
+  
+    .main_tour_img {
+      width: 50%;
+      height: 50vw !important;
+      object-fit: cover;
+    }
+  
+    .main_tour_text {
+      font-size: inherit !important;
+      padding-top: 20px;
+    }
+  
+    .main_tour_title {
+      display: none;
+    }
+  
+    .tour_direction_excursion_block {
+      position: unset;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: unset;
+      justify-content: unset;
+    }
+    }

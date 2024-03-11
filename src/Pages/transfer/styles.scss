@@ -1,0 +1,72 @@
+.Tour-box {
+    display: block;
+    font-family: 'Gelasio', serif;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    height: auto;
+    max-width: 60vw;
+}
+
+.tour_page_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tour-transfer {
+    display: flex;
+    margin: 10px 150px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    -webkit-box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2) inset;
+    font-size: 1.5em;
+}
+
+.transfer-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.transfer_btn {
+    padding: 5px 10px;
+    color: black;
+    border: none;
+    font-size: 1em;
+    outline: none !important;
+    background: #fffa9e;
+    border-radius: 0.5em;
+}
+
+.transfer_btn:hover {
+    background: #1B75BB;
+    color: white;
+}
+
+@media screen and (max-width:1080px) {
+    .tour-transfer {
+        margin: 10px 80px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .tour-transfer {
+        margin: 10px 30px;
+        font-size: 1em;
+    }
+
+    .transfer_btn {
+        padding: 5px 10px;
+        color: black;
+        border: none;
+        font-size: 1em;
+        outline: none !important;
+        background: #fffa9e;
+        border-radius: 0.5em;
+    }
+}

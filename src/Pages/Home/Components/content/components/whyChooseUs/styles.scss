@@ -1,0 +1,93 @@
+$mainFont: 'Gelasio',
+serif;
+$fontStyle: normal;
+  
+  .home-discount {
+    display: flex;
+    border: 1px solid darkgrey;
+    box-sizing: border-box;
+    border-radius: 0.31em;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.1em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .review-data {
+    display: flex;
+    align-self: center;
+    font-family: $mainFont;
+    font-style: $fontStyle;
+    font-weight: normal;
+    font-size: 1.12em;
+    color: #081F32;
+    opacity: 0.6;
+  }
+
+  .home-book {
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 4em;
+    height: 4em;
+  }
+
+  .home-discount-text1 {
+    font-size: 1.4em;
+    padding: 10px 0;
+  }
+
+  .home-discount-text2-container {
+    background-color: #fffa9e;
+    padding: 5px;
+    color: #081F32;
+    border-radius: 0.5em;
+  }
+  
+  .home-discount-text2-container:hover {
+    background: #1B75BB;
+    color: white;
+  }
+
+  .home-discount-text2 {
+    font-family: $mainFont;
+    font-style: $fontStyle;
+    font-weight: normal;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .home-discount a {
+  text-decoration: none !important;
+  color: unset;
+}
+
+@media screen and (min-width: 1280px) {
+    .home-discount {
+        width: 24%;
+    }
+}
+
+  @media screen and (min-width: 1080px) and (max-width: 1280px) {
+    .home-discount {
+      margin-top: 2em;
+      width: 48%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {  
+    .home-discount {
+      margin-top: 2em;
+      width: 48%;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .home-discount {
+      margin-top: 2em;
+      width: 100%;
+    }
+}

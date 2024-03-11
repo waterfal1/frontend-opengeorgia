@@ -1,0 +1,117 @@
+.home-grid {
+    display: grid;
+    grid-template-areas: "grid-el-0 grid-el-0 grid-el-1"
+      "grid-el-0 grid-el-0 grid-el-2"
+      "grid-el-3 grid-el-4 grid-el-5";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  
+    .grid-el-0 {
+      grid-area: grid-el-0;
+  
+      .home-grid-img img {
+        height: 450px;
+      }
+    }
+  
+    .grid-el-1 {
+      grid-area: grid-el-1;
+    }
+  
+    .grid-el-2 {
+      grid-area: grid-el-2;
+    }
+  
+    .grid-el-3 {
+      grid-area: grid-el-3;
+    }
+  
+    .grid-el-4 {
+      grid-area: grid-el-4;
+    }
+  
+    .grid-el-5 {
+      grid-area: grid-el-5;
+    }
+  
+    .home-grid-element {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 15px;
+      font-size: 1.4em;
+      line-height: 1.1em;
+  
+      a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+      }
+  
+    }
+  
+    .home-grid-img img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+  
+    .home-grid-body {
+      padding-top: 25px;
+      display: flex;
+      flex-direction: column;
+  
+      .home-grid-title {
+        font-size: 1.5em;
+        font-weight: 700;
+      }
+  
+      .home-grid-btn {
+        display: flex;
+        justify-content: center;
+        background: #fffa9e;
+        border-radius: 5px;
+        font-size: 1em;
+        opacity: 0.9;
+        padding: 8px 13px;
+        color: black;
+        text-decoration: none;
+      }
+  
+      .home-grid-btn:hover {
+        opacity: 1;
+        background: #1B75BB;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    //grid
+    .home-grid {
+      grid-template-areas: "grid-el-0 grid-el-1"
+        "grid-el-2 grid-el-3"
+        "grid-el-4 grid-el-5";
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: repeat(2, 1fr);
+  
+      .grid-el-0 .home-grid-img img {
+        height: 200px !important;
+      }
+    }
+}
+
+
+  @media screen and (max-width: 480px) {
+
+    //grid
+    .home-grid {
+      grid-template-areas: "grid-el-0""grid-el-1""grid-el-2""grid-el-3""grid-el-4""grid-el-5";
+      grid-template-rows: repeat(6, auto);
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
