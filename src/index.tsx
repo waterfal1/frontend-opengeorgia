@@ -13,7 +13,7 @@ import App from "./App";
 import "./index.css";
 
 const link = new HttpLink({
-  uri: "https://open-georgia-back-49b77e0f7b8c.herokuapp.com/myendpoint",
+  uri: "https://og-backend-production.up.railway.app/myendpoint",
   headers: {
     "Access-Control-Allow-Origin": "*",
   },
