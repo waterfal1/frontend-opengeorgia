@@ -13,7 +13,7 @@ import App from "./App";
 import "./index.css";
 
 const link = new HttpLink({
-  uri: "https://og-backend-production.up.railway.app/myendpoint",
+  uri: "https://backend-opengeorgia-net.vercel.app/myendpoint",
   headers: {
     "Access-Control-Allow-Origin": "*",
   },
